@@ -23,3 +23,6 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(6, 0)
+        
+def test_temporary_failure():
+    assert 1 == 2
